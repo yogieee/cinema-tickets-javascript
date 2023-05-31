@@ -11,9 +11,6 @@ export default class TicketService {
   purchaseTickets(accountId, ...ticketTypeRequests) {
     // throws InvalidPurchaseException
     try {
-      console.log(typeof accountId);
-      console.log(!Number.isInteger(accountId));
-
       //create objects
       var ADULT = new TicketTypeRequest("ADULT", ticketTypeRequests[0].ADULT);
       var CHILD = new TicketTypeRequest("CHILD", ticketTypeRequests[0].CHILD);
